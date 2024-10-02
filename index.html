@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#Games" class="w3-button w3-bar-item">Games</a>
+  <a href="#Videos" class="w3-button w3-bar-item">Videos</a>
+  <a href="#About me" class="w3-button w3-bar-item">About me</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://i.pinimg.com/736x/51/39/2c/51392c8a620938a1d5087f44656d146f.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">AZLN</h2>
+  <p class="w3-opacity"><i>Who am I?</i></p>
+  <p class="w3-justify">Yo! I’m an 18-year-old code ninja and future tech mogul on a mission. When I’m not crafting the next big app or diving into computer science, you’ll catch me crushing it at the gym, turning sweat into strength and pushing forwards. Gaming is my playground—whether I’m battling foes or teaming up for epic quests, I’m all about that high score life. I thrive on pushing boundaries, constantly hunting for new skills and the latest tech to master. With a relentless drive and a passion for innovation, I’m here to disrupt the ordinary and create something extraordinary. Ready to join me on this wild ride?</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Lock in</p>
+    <img src="https://i.pinimg.com/736x/ef/6f/93/ef6f934639c5b01c28a65a02823536ad.jpg" alt="Random Name" style="width:100%">
+    <p> </p>
+  </article>
+  <article class="w3-third">
+    <p>Stay hard</p>
+    <img src="https://i.pinimg.com/736x/df/e5/66/dfe5662ca823b8ece577dffeebc08700.jpg" alt="Random Name" style="width:100%">
+    <p> </p>
+  </article>
+  <article class="w3-third">
+    <p>Move forward</p>
+    <img src="https://i.pinimg.com/736x/3c/c3/2c/3cc32ca71939a949a41f406c4a2fc12b.jpg" alt="Random Name" style="width:100%">
+    <p> </p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
