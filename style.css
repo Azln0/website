@@ -1,0 +1,145 @@
+/* General Styles */
+body, html {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation Bar */
+.w3-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.w3-bar-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.w3-bar-item:hover {
+  background-color: #333;
+}
+
+/* Slideshow */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+/* Content Styling */
+.w3-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.w3-opacity {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.w3-justify {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* Motivation Section */
+.motivation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.motivation-section .w3-third {
+  width: 30%;
+  padding: 0 10px;
+}
+
+.motivation-section img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.motivation-section img:hover {
+  transform: scale(1.05);
+}
+
+.motivation-section p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  padding: 40px;
+}
+
+footer a {
+  color: white;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff9800;
+}
+
+footer i {
+  margin: 0 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .w3-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .motivation-section {
+    flex-direction: column;
+  }
+
+  .motivation-section .w3-third {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
